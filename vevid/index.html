@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <script src="../menu.js" class="menuBox"></script>
+        <header class="header">
+            <div class="_container">
+                <div class="header__container">
+                    <a href="" class="header-logo">
+
+                        <svg class="header-logo__svg" width="91" height="26" viewBox="0 0 91 26" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M80.733 25.4414C79.1117 25.4414 77.6503 25.0787 76.349 24.3534C75.0477 23.6067 74.013 22.5721 73.245 21.2494C72.4983 19.9267 72.125 18.3694 72.125 16.5774C72.125 14.7641 72.4983 13.1961 73.245 11.8734C74.013 10.5507 75.0477 9.52674 76.349 8.80141C77.6503 8.07607 79.1117 7.71341 80.733 7.71341C82.1837 7.71341 83.453 8.03341 84.541 8.67341C85.629 9.31341 86.4717 10.2841 87.069 11.5854C87.6663 12.8867 87.965 14.5507 87.965 16.5774C87.965 18.5827 87.677 20.2467 87.101 21.5694C86.525 22.8707 85.693 23.8414 84.605 24.4814C83.5383 25.1214 82.2477 25.4414 80.733 25.4414ZM81.597 21.3454C82.4077 21.3454 83.1437 21.1534 83.805 20.7694C84.4663 20.3854 84.989 19.8414 85.373 19.1374C85.7783 18.4121 85.981 17.5587 85.981 16.5774C85.981 15.5747 85.7783 14.7214 85.373 14.0174C84.989 13.3134 84.4663 12.7694 83.805 12.3854C83.1437 12.0014 82.4077 11.8094 81.597 11.8094C80.765 11.8094 80.0183 12.0014 79.357 12.3854C78.6957 12.7694 78.1623 13.3134 77.757 14.0174C77.373 14.7214 77.181 15.5747 77.181 16.5774C77.181 17.5587 77.373 18.4121 77.757 19.1374C78.1623 19.8414 78.6957 20.3854 79.357 20.7694C80.0183 21.1534 80.765 21.3454 81.597 21.3454ZM86.109 25.1854V21.6654L86.205 16.5454L85.885 11.4574V1.44141H90.877V25.1854H86.109Z"
+                                fill="white" />
+                            <path
+                                d="M63.7174 25.184V7.968H68.7094V25.184H63.7174ZM66.2134 5.568C65.296 5.568 64.5494 5.30133 63.9734 4.768C63.3974 4.23467 63.1094 3.57333 63.1094 2.784C63.1094 1.99467 63.3974 1.33333 63.9734 0.800001C64.5494 0.266667 65.296 0 66.2134 0C67.1307 0 67.8774 0.256001 68.4534 0.768002C69.0294 1.25867 69.3174 1.89867 69.3174 2.688C69.3174 3.52 69.0294 4.21333 68.4534 4.768C67.8987 5.30133 67.152 5.568 66.2134 5.568Z"
+                                fill="white" />
+                            <path
+                                d="M49.2633 25.1848L42.0312 7.96875H47.1833L53.1993 22.7848H50.6393L56.8793 7.96875H61.6792L54.4152 25.1848H49.2633Z"
+                                fill="white" />
+                            <path
+                                d="M33.2615 25.4403C31.2988 25.4403 29.5708 25.0563 28.0775 24.2883C26.6055 23.5203 25.4642 22.475 24.6535 21.1523C23.8428 19.8083 23.4375 18.283 23.4375 16.5763C23.4375 14.8483 23.8322 13.323 24.6215 12.0003C25.4322 10.6563 26.5308 9.61101 27.9175 8.86434C29.3042 8.09634 30.8722 7.71235 32.6215 7.71235C34.3068 7.71235 35.8215 8.07501 37.1655 8.80034C38.5308 9.50434 39.6082 10.5283 40.3975 11.8723C41.1868 13.195 41.5815 14.7843 41.5815 16.6403C41.5815 16.8323 41.5708 17.0563 41.5495 17.3123C41.5282 17.547 41.5068 17.771 41.4855 17.9843H27.5015V15.0723H38.8615L36.9415 15.9363C36.9415 15.0403 36.7602 14.2617 36.3975 13.6003C36.0348 12.939 35.5335 12.427 34.8935 12.0643C34.2535 11.6803 33.5068 11.4883 32.6535 11.4883C31.8002 11.4883 31.0428 11.6803 30.3815 12.0643C29.7415 12.427 29.2402 12.9497 28.8775 13.6323C28.5148 14.2937 28.3335 15.083 28.3335 16.0003V16.7683C28.3335 17.707 28.5362 18.539 28.9415 19.2643C29.3682 19.9683 29.9548 20.5123 30.7015 20.8963C31.4695 21.259 32.3655 21.4403 33.3895 21.4403C34.3068 21.4403 35.1068 21.3017 35.7895 21.0243C36.4935 20.747 37.1335 20.331 37.7095 19.7763L40.3655 22.6563C39.5762 23.5523 38.5842 24.2457 37.3895 24.7363C36.1948 25.2057 34.8188 25.4403 33.2615 25.4403ZM31.5335 5.76034L25.7415 1.15234H31.1175L35.4375 5.76034H31.5335Z"
+                                fill="white" />
+                            <path
+                                d="M9.664 25.1832L0 2.7832H5.6L14.048 22.6232H10.752L19.328 2.7832H24.48L14.784 25.1832H9.664Z"
+                                fill="white" />
+                        </svg>
+                        <svg width="91" height="26" viewBox="0 0 91 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M80.733 25.4414C79.1117 25.4414 77.6503 25.0787 76.349 24.3534C75.0477 23.6067 74.013 22.5721 73.245 21.2494C72.4983 19.9267 72.125 18.3694 72.125 16.5774C72.125 14.7641 72.4983 13.1961 73.245 11.8734C74.013 10.5507 75.0477 9.52674 76.349 8.80141C77.6503 8.07607 79.1117 7.71341 80.733 7.71341C82.1837 7.71341 83.453 8.03341 84.541 8.67341C85.629 9.31341 86.4717 10.2841 87.069 11.5854C87.6663 12.8867 87.965 14.5507 87.965 16.5774C87.965 18.5827 87.677 20.2467 87.101 21.5694C86.525 22.8707 85.693 23.8414 84.605 24.4814C83.5383 25.1214 82.2477 25.4414 80.733 25.4414ZM81.597 21.3454C82.4077 21.3454 83.1437 21.1534 83.805 20.7694C84.4663 20.3854 84.989 19.8414 85.373 19.1374C85.7783 18.4121 85.981 17.5587 85.981 16.5774C85.981 15.5747 85.7783 14.7214 85.373 14.0174C84.989 13.3134 84.4663 12.7694 83.805 12.3854C83.1437 12.0014 82.4077 11.8094 81.597 11.8094C80.765 11.8094 80.0183 12.0014 79.357 12.3854C78.6957 12.7694 78.1623 13.3134 77.757 14.0174C77.373 14.7214 77.181 15.5747 77.181 16.5774C77.181 17.5587 77.373 18.4121 77.757 19.1374C78.1623 19.8414 78.6957 20.3854 79.357 20.7694C80.0183 21.1534 80.765 21.3454 81.597 21.3454ZM86.109 25.1854V21.6654L86.205 16.5454L85.885 11.4574V1.44141H90.877V25.1854H86.109Z"
+                                fill="#AAAAAA" />
+                            <path
+                                d="M63.7174 25.184V7.968H68.7094V25.184H63.7174ZM66.2134 5.568C65.296 5.568 64.5494 5.30133 63.9734 4.768C63.3974 4.23467 63.1094 3.57333 63.1094 2.784C63.1094 1.99467 63.3974 1.33333 63.9734 0.800001C64.5494 0.266667 65.296 0 66.2134 0C67.1307 0 67.8774 0.256001 68.4534 0.768002C69.0294 1.25867 69.3174 1.89867 69.3174 2.688C69.3174 3.52 69.0294 4.21333 68.4534 4.768C67.8987 5.30133 67.152 5.568 66.2134 5.568Z"
+                                fill="#AAAAAA" />
+                            <path
+                                d="M49.2633 25.1848L42.0312 7.96875H47.1833L53.1993 22.7848H50.6393L56.8793 7.96875H61.6792L54.4152 25.1848H49.2633Z"
+                                fill="#AAAAAA" />
+                            <path
+                                d="M33.2615 25.4403C31.2988 25.4403 29.5708 25.0563 28.0775 24.2883C26.6055 23.5203 25.4642 22.475 24.6535 21.1523C23.8428 19.8083 23.4375 18.283 23.4375 16.5763C23.4375 14.8483 23.8322 13.323 24.6215 12.0003C25.4322 10.6563 26.5308 9.61101 27.9175 8.86434C29.3042 8.09634 30.8722 7.71235 32.6215 7.71235C34.3068 7.71235 35.8215 8.07501 37.1655 8.80034C38.5308 9.50434 39.6082 10.5283 40.3975 11.8723C41.1868 13.195 41.5815 14.7843 41.5815 16.6403C41.5815 16.8323 41.5708 17.0563 41.5495 17.3123C41.5282 17.547 41.5068 17.771 41.4855 17.9843H27.5015V15.0723H38.8615L36.9415 15.9363C36.9415 15.0403 36.7602 14.2617 36.3975 13.6003C36.0348 12.939 35.5335 12.427 34.8935 12.0643C34.2535 11.6803 33.5068 11.4883 32.6535 11.4883C31.8002 11.4883 31.0428 11.6803 30.3815 12.0643C29.7415 12.427 29.2402 12.9497 28.8775 13.6323C28.5148 14.2937 28.3335 15.083 28.3335 16.0003V16.7683C28.3335 17.707 28.5362 18.539 28.9415 19.2643C29.3682 19.9683 29.9548 20.5123 30.7015 20.8963C31.4695 21.259 32.3655 21.4403 33.3895 21.4403C34.3068 21.4403 35.1068 21.3017 35.7895 21.0243C36.4935 20.747 37.1335 20.331 37.7095 19.7763L40.3655 22.6563C39.5762 23.5523 38.5842 24.2457 37.3895 24.7363C36.1948 25.2057 34.8188 25.4403 33.2615 25.4403ZM31.5335 5.76034L25.7415 1.15234H31.1175L35.4375 5.76034H31.5335Z"
+                                fill="#AAAAAA" />
+                            <path
+                                d="M9.664 25.1832L0 2.7832H5.6L14.048 22.6232H10.752L19.328 2.7832H24.48L14.784 25.1832H9.664Z"
+                                fill="#AAAAAA" />
+                        </svg>
+                    </a>
+                    <ul class="header-menu">
+                        <li class="header-menu__item"><a href="" class="header-menu__link">О нас</a></li>
+                        <li class="header-menu__item"><a href="" class="header-menu__link">Популярные товары</a></li>
+                        <li class="header-menu__item"><a href="" class="header-menu__link">Каталог</a></li>
+                    </ul>
+                    <button class="header-button">Связаться с нами</button>
+                </div>
+            </div>
+        </header>
+        <section class="section-1">
+            <div class="section-1__container">
+                <h1 class="section-1__title">Стиль без компромиссов. <br> Ярко, смело, Vèvid.</h1>
+            </div>
+            <div class="section-1__image _ibg">
+                <img src="img/fon_oblozhki_805.webp" alt="no image">
+            </div>
+        </section>
+        <section class="running-line">
+            <!-- Slider main container -->
+            <div class="swiper-2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper s-w">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="running-line__text"><span></span>Vèvid</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="section-2__container _container">
+                <h3 class="subtitle"><span></span>О нас<span></span></h3>
+                <h2 class="section-2__title">Vèvid — стиль для современных женщин, ценящих <br> комфорт, дизайн и
+                    качество.
+                    Открой свою <br> уникальность с Vèvid!</h2>
+            </div>
+        </section>
+        <section class="section-sutitle">
+            <h3 class="section-sutitle__subtitle"><span></span>Популярные товары<span></span></h3>
+        </section>
+        <section class="section-3 _container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="section-3__img">
+                            <img src="img/popular_1.webp" alt="">
+                        </div>
+                        <div class="section-3-box">
+                            <h4 class="section-3-box__name">Dress "Evening Grace"</h4>
+                            <p class="section-3-box__price">Цена: 7,990 ₽</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-3__img">
+                            <img src="img/popular_2.webp" alt="">
+                        </div>
+                        <div class="section-3-box">
+                            <h4 class="section-3-box__name">Свитшот "Cozy Days"</h4>
+                            <p class="section-3-box__price">Цена: 4,290 ₽</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-3__img">
+                            <img src="img/popular_3.webp" alt="">
+                        </div>
+                        <div class="section-3-box">
+                            <h4 class="section-3-box__name">Пальто "Urban Classic"</h4>
+                            <p class="section-3-box__price">Цена: 12 500 ₽</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-3__img">
+                            <img src="img/popular_4.webp" alt="">
+                        </div>
+                        <div class="section-3-box">
+                            <h4 class="section-3-box__name">Брюки "Chic Comfort"</h4>
+                            <p class="section-3-box__price">Цена: 5,890 ₽</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-3__img">
+                            <img src="img/popular_2.webp" alt="">
+                        </div>
+                        <div class="section-3-box">
+                            <h4 class="section-3-box__name">Свитшот "Cozy Days"</h4>
+                            <p class="section-3-box__price">Цена: 4,290 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3-buttons">
+                <!-- If we need navigation buttons -->
+                <div class="button-prev">
+
+                    <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.271597 10.6894L10.0305 19.8858C10.1933 20.0394 10.4097 20.125 10.6346 20.125C10.8596 20.125 11.0759 20.0394 11.2388 19.8858L11.2493 19.8754C11.3285 19.801 11.3916 19.7114 11.4347 19.6121C11.4778 19.5128 11.5 19.4059 11.5 19.2979C11.5 19.1898 11.4778 19.0829 11.4347 18.9836C11.3916 18.8843 11.3285 18.7947 11.2493 18.7203L2.05948 10.0608L11.2493 1.40474C11.3285 1.33031 11.3916 1.24073 11.4347 1.14143C11.4778 1.04214 11.5 0.935208 11.5 0.827149C11.5 0.71909 11.4778 0.612161 11.4347 0.512866C11.3916 0.413571 11.3285 0.323986 11.2493 0.249561L11.2388 0.239168C11.0759 0.0856446 10.8596 1.79863e-07 10.6346 1.79863e-07C10.4097 1.79863e-07 10.1933 0.0856446 10.0305 0.239168L0.271597 9.43555C0.185771 9.51643 0.117445 9.6137 0.070759 9.72147C0.0240731 9.82923 0 9.94526 0 10.0625C0 10.1797 0.0240731 10.2958 0.070759 10.4035C0.117445 10.5113 0.185771 10.6086 0.271597 10.6894Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <div class="button-next">
+                    <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.2284 9.43555L1.46949 0.239167C1.30665 0.0856436 1.09032 0 0.865353 0C0.640388 0 0.424055 0.0856436 0.261223 0.239167L0.250715 0.249559C0.171504 0.323984 0.10843 0.413569 0.0653285 0.512864C0.0222272 0.612159 3.554e-07 0.719088 3.554e-07 0.827147C3.554e-07 0.935206 0.0222272 1.04213 0.0653285 1.14143C0.10843 1.24073 0.171504 1.33031 0.250715 1.40474L9.44052 10.0642L0.250715 18.7203C0.171504 18.7947 0.10843 18.8843 0.0653285 18.9836C0.0222272 19.0829 3.554e-07 19.1898 3.554e-07 19.2979C3.554e-07 19.4059 0.0222272 19.5128 0.0653285 19.6121C0.10843 19.7114 0.171504 19.801 0.250715 19.8754L0.261223 19.8858C0.424055 20.0394 0.640388 20.125 0.865353 20.125C1.09032 20.125 1.30665 20.0394 1.46949 19.8858L11.2284 10.6894C11.3142 10.6086 11.3826 10.5113 11.4292 10.4035C11.4759 10.2958 11.5 10.1797 11.5 10.0625C11.5 9.94526 11.4759 9.82923 11.4292 9.72146C11.3826 9.6137 11.3142 9.51643 11.2284 9.43555Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="section-4 _container">
+            <div class="section-4__img">
+                <img src="img/1_picture.webp" alt="">
+            </div>
+            <div class="section-4__img">
+                <img src="img/2_picture.webp" alt="">
+            </div>
+        </section>
+        <section class="section-sutitle">
+            <h3 class="section-sutitle__subtitle"><span></span>Товары<span></span></h3>
+        </section>
+        <section class="section-5 _container">
+            <div class="section-5__items">
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_1.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_1.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_1.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_1.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_1.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_1.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_1.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_1.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+                <div class="section-5__item">
+                    <div class="section-5__img">
+                        <img src="img/popular_3.webp" alt="">
+                    </div>
+                    <div class="section-5-box">
+                        <h4 class="section-5-box__name">Dress "Evening Grace"</h4>
+                        <p class="section-5-box__price">Цена: 7,990 ₽</p>
+                    </div>
+                </div>
+            </div>
+            <button class="section-5__button">загрузить еще</button>
+        </section>
+        <section class="section-sutitle">
+            <h3 class="section-sutitle__subtitle"><span></span>Последняя коллекция<span></span></h3>
+        </section>
+        <section class="section-6">
+            <div class="swiper mySwiper3">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide section-6__slide"><img src="img/slide1-1.webp" alt=""></div>
+                    <div class="swiper-slide section-6__slide"><img src="img/2_slide.webp" alt=""></div>
+                    <div class="swiper-slide section-6__slide"><img src="img/3_slide.webp" alt=""></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="section-sutitle">
+            <h3 class="section-sutitle__subtitle"><span></span>Где мы находимся<span></span></h3>
+        </section>
+        <section class="section-7 _container">
+            <div class="section-7__left"><img src="img/office.webp" alt=""></div>
+            <div class="section-7-right">
+                <h3 class="section-7-right__title">Посетите наш шоурум в центре города, чтобы примерить свои любимые
+                    стили.</h3>
+                <div class="section-7-contacts">
+                    <div class="section-7-contact">
+                        <h4 class="section-7-contact__title">Адрес:</h4>
+                        <span class="section-7-contact__subtitle">123 Улица Пример, Москва</span>
+                    </div>
+                    <div class="section-7-contact">
+                        <h4 class="section-7-contact__title">Телефон:</h4>
+                        <a href="7 (999) 123-45-67" class="section-7-contact__link">+7 (999) 123-45-67</a>
+                    </div>
+                    <div class="section-7-contact">
+                        <h4 class="section-7-contact__title">E-mail:</h4>
+                        <a href="info@vevid.shop" class="section-7-contact__link">info@vevid.shop</a>
+                    </div>
+                </div>
+                <div class="section-7-right__img">
+                    <img src="img/contact_image_2.webp" alt="">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container _container">
+                <div class="form">
+                    <form action="#" id="form" class="form__body">
+                        <h2 class="form__title">Получайте обновления о новых поступлениях и эксклюзивных предложениях!
+                        </h2>
+                        <div class="form__item">
+                            <label for="formEmail" class="form__label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                        </div>
+                        <div class="form__item">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement"
+                                    class="checkbox__input _req">
+                                <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на
+                                        обработку персональных данных в соответствии с<a
+                                            href="#">Условиями</a>*</span></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__button">Подписаться</button>
+                    </form>
+                </div>
+                <div class="footer-list">
+                    <a href="#" class="footer-list__link">О нас</a>
+                    <a href="#" class="footer-list__link">Популярные товары</a>
+                    <a href="#" class="footer-list__link">Каталог</a>
+                </div>
+                <div class="footer-list">
+                    <a href="#" class="footer-list__link">Инстаграм</a>
+                    <a href="#" class="footer-list__link">Вконтакте</a>
+                    <a href="#" class="footer-list__link">Телеграм</a>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer-contact">
+                        <h4 class="footer-contact__title">Адрес:</h4>
+                        <span class="footer-contact__subtitle">123 Улица Пример, Москва</span>
+                    </div>
+                    <div class="footer-contact">
+                        <h4 class="footer-contact__title">Телефон:</h4>
+                        <a href="7 (999) 123-45-67" class="footer-contact__link">+7 (999) 123-45-67</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4 class="footer-contact__title">E-mail:</h4>
+                        <a href="info@vevid.shop" class="footer-contact__link">info@vevid.shop</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
