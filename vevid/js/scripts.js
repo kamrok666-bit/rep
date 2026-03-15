@@ -113,3 +113,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     return
 })
+
+
+
+/* -----------------Прокрутка при клике------------------------ */
+document.querySelector('.about-us').addEventListener('click', function () {
+    document.querySelector('.section-2').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+document.querySelector('.popular-products').addEventListener('click', function () {
+    document.querySelector('.section-3').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('.catalog').addEventListener('click', function () {
+    document.querySelector('.section-5').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('.header-button').addEventListener('click', function () {
+    document.querySelector('.section-7').scrollIntoView({ behavior: 'smooth' });
+});
