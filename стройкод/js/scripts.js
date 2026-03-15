@@ -56,3 +56,22 @@ document.querySelectorAll('.accordion-item__trigger').forEach((item) =>
     })
 )
 
+
+
+
+/* -----------------Прокрутка при клике------------------------ */
+document.querySelector('.about-us').addEventListener('click', function () {
+    document.querySelector('.divider').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.services').addEventListener('click', function () {
+    document.querySelector('.divider-services').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.contacts').addEventListener('click', function () {
+    document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.autorization__entry').addEventListener('click', function () {
+    document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.section-1-right__button').addEventListener('click', function () {
+    document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+});
